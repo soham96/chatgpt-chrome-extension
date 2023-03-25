@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "writer",
+  "description": "LLM Author Tools",
+  "version": "0.1",
+  "permissions": ["contextMenus"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "hello.html",
+    "default_icon": "images/icon.png"
+  }
+}
