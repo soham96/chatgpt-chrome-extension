@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Extension</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div id="app">
+        <h1>Chatbot Extension</h1>
+        <p>Selected text:</p>
+        <input type="text" id="selectedText" readonly>
+        <div class="actions">
+            <button id="summarizeBtn">Summarize</button>
+            <button id="translateBtn">Translate</button>
+            <button id="formalizeBtn">Formalize</button>
+        </div>
+        <p>Output:</p>
+        <textarea id="outputText" readonly></textarea>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>

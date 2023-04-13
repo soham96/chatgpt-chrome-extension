@@ -3,7 +3,7 @@
   "name": "writer",
   "description": "LLM Author Tools",
   "version": "0.1",
-  "permissions": ["contextMenus"],
+  "permissions": ["contextMenus", "activeTab", "scripting"],
   "background": {
     "service_worker": "background.js"
   },
@@ -14,7 +14,7 @@
     }
   ],
   "action": {
-    "default_popup": "hello.html",
+    "default_popup": "popup.html",
     "default_icon": "images/icon.png"
   }
 }
